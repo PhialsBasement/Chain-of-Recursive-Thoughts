@@ -19,10 +19,12 @@ YES. I tested it with Mistral 3.1 24B and it went from "meh" to "holy crap", esp
 4. Final response is the survivor of this AI battle royale
 
 ## Examples
-Mistral 3.1 24B non CoRT
-![rec](https://github.com/user-attachments/assets/acbcf1f9-4715-4d2c-a31c-38b349602380)
+
 
 Mistral 3.1 24B + CoRT
+![rec](https://github.com/user-attachments/assets/acbcf1f9-4715-4d2c-a31c-38b349602380)
+
+Mistral 3.1 24B non CoRT
 ![non-rec](https://github.com/user-attachments/assets/9c4f6af9-0a8f-4c62-920c-f272fce225c1)
 
 
