@@ -18,6 +18,28 @@ YES. I tested it with Mistral 3.1 24B and it went from "meh" to "holy crap", esp
    - Picks the best one
 4. Final response is the survivor of this AI battle royale
 
+
+## How to use the Web UI(still early dev, no MD formatting)
+1. Open start_recthink.bat
+2. wait for a bit as it installs dependencies
+3. profit??
+
+If running on linux:
+```
+pip install -r requirements.txt
+cd frontend && npm install
+cd ..
+python ./recthink_web.py
+```
+
+(open a new shell)
+
+```
+cd frontend
+npm start
+```
+
+
 ## Examples
 
 
@@ -42,6 +64,20 @@ The magic is in:
  - Competitive alternative generation
  - Iterative refinement
  - Dynamic thinking depth
+
+
+
+## Star History(THANK YOU SO MUCH)
+
+<a href="https://www.star-history.com/#PhialsBasement/Chain-of-Recursive-Thoughts&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=PhialsBasement/Chain-of-Recursive-Thoughts&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=PhialsBasement/Chain-of-Recursive-Thoughts&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=PhialsBasement/Chain-of-Recursive-Thoughts&type=Timeline" />
+ </picture>
+</a>
+
+
 
 ### Contributing
 Found a way to make it even better? PR's welcome!
