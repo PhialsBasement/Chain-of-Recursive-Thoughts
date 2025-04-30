@@ -19,7 +19,7 @@ YES. I tested it with Mistral 3.1 24B and it went from "meh" to "holy crap", esp
 4. Final response is the survivor of this AI battle royale
 
 
-## How to use the Web UI(still early dev, no MD formatting)
+## How to use the Web UI(still early dev)
 1. Open start_recthink.bat
 2. wait for a bit as it installs dependencies
 3. profit??
