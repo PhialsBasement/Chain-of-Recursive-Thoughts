@@ -1,2 +1,6 @@
-openai
-requests
+fastapi>=0.95.0
+uvicorn[standard]>=0.21.0
+websockets>=11.0.3
+pydantic>=1.10.7
+python-dotenv>=1.0.0
+requests>=2.28.0
