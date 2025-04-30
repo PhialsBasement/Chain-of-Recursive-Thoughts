@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Send, Save, Settings, Brain, MoveDown, CheckCircle, X, MessageSquare, Clock, RefreshCw, Zap } from 'lucide-react';
 import { useRecThink } from '../context/RecThinkContext';
+import ReactMarkdown from 'react-markdown';
 
 const RecursiveThinkingInterface = () => {
   const {
@@ -125,7 +126,9 @@ const RecursiveThinkingInterface = () => {
                   )}
                 </div>
               </div>
-              <div className="text-sm text-gray-700 whitespace-pre-wrap">{item.response}</div>
+              <div className="text-sm text-gray-700 whitespace-pre-wrap markdown-content">
+                <ReactMarkdown>{item.response}</ReactMarkdown>
+              </div>
               {item.explanation && item.selected && (
                 <div className="mt-2 text-xs text-green-700 bg-green-50 p-2 rounded border border-green-200">
                   <strong>Selected because:</strong> {item.explanation}
@@ -148,7 +151,14 @@ const RecursiveThinkingInterface = () => {
               : 'bg-gray-100 text-gray-800 rounded-bl-none'
           }`}
         >
-          {message.content}
+          {message.role === 'user' ? (
+            <div className="whitespace-pre-wrap">{message.content}</div>
+          ) : (
+            <div className="markdown-content">
+              <ReactMarkdown>{message.content}</ReactMarkdown>
+            </div>
+          )}
+          
           {message.role === 'assistant' && index === messages.length - 1 && thinkingProcess && (
             <div className="mt-2 flex items-center justify-end text-xs text-gray-500">
               <span 
