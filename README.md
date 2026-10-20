@@ -20,7 +20,7 @@ YES. I tested it with Mistral 3.1 24B and it went from "meh" to "holy crap", esp
 
 
 ## How to use the Web UI(still early dev)
-1. Open start_recthink.bat
+1. Open start-recthink.bat
 2. wait for a bit as it installs dependencies
 3. profit??
 
@@ -54,7 +54,7 @@ Mistral 3.1 24B non CoRT
 ```python
 pip install -r requirements.txt
 export OPENROUTER_API_KEY="your-key-here"
-python recursive-thinking-ai.py
+python recursive_thinking_ai.py
 ```
 
 ### The Secret Sauce
